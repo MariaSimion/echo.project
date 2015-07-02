@@ -12,7 +12,7 @@ import java.io.IOException;
 /**
  * Created by UserA on 30/6/2015.
  */
-@WebServlet("/login")
+@WebServlet("")
 public class AutheticationServlet extends HttpServlet {
 
 
@@ -32,7 +32,9 @@ public class AutheticationServlet extends HttpServlet {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
 
-        resp.setContentType("/login");
+        RequestDispatcher rd = getServletContext().getRequestDispatcher("/WEB-INF/forms/login.jsp");
+
+        rd.forward(req,resp);
     }
 
     @Override
@@ -42,12 +44,12 @@ public class AutheticationServlet extends HttpServlet {
         String password = request.getParameter("password");
 
 
-        if (authenticationService.equals("username")) {
+        if (authenticationService.equals("username") && authenticationService.equals("password")) {
             HttpSession session = request.getSession();
             session.setAttribute("username", "Maria");
             //setting session to expiry in 30 mins
             session.setMaxInactiveInterval(30 * 60);
-            Cookie userName = new Cookie(username, username);
+            Cookie userName = new Cookie(username, password);
             userName.setMaxAge(30 * 60);
             response.addCookie(userName);
             response.sendRedirect("WEB-INF/forms/mainPage.jsp");

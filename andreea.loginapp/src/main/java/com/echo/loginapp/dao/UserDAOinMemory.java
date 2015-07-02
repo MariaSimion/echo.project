@@ -13,9 +13,9 @@ public class UserDAOinMemory implements UserDAO {
     final List<User> userList = new ArrayList<User>();
 
     {
-        userList.add(new User("Mihai", "123456"));
+        userList.add(new User("Andreea", "123456"));
         userList.add(new User("Maria", "123456"));
-        userList.add(new User("Bogdan", "123456"));
+        userList.add(new User("Mihai", "123456"));
     }
 
     public User findUserByUsername(String username) {

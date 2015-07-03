@@ -11,6 +11,9 @@
     <modules>
         <module>maria.loginapp</module>
         <module>andreea.loginapp</module>
+        <module>repository</module>
+        <module>service</module>
+        <module>web</module>
     </modules>
 
 

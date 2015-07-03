@@ -23,12 +23,13 @@
 </div>
 <div id="center">
 
-    <form action="login" method="post">Username:
+    <form method="post">Username:
         <input type="text" class="login-input" name="username"><br>
         Password:
         <input type="password" class="login-input" name="password"><br>
         <input type="submit" value="Login" class="login-submit">
     </form>
+
 </div>
 
 <div id="footer">

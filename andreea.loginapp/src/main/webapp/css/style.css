@@ -34,4 +34,19 @@ body {
   border-bottom-color: #223b66;
 }
 
+.login-submit-out {
+  margin: auto;
+  width: 30%;
+  border:3px solid #8AC007;
+  padding: 10px;
+  display: block;
+  height: 37px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #294779;
+  text-align: center;
+  background: #adcbfa;
+  border: 1px solid #284473;
+  border-bottom-color: #223b66;
+}
 

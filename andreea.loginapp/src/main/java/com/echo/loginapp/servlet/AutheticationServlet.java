@@ -52,7 +52,7 @@ public class AutheticationServlet extends HttpServlet {
             Cookie userName = new Cookie(username, password);
             userName.setMaxAge(30 * 60);
             response.addCookie(userName);
-            response.sendRedirect("WEB-INF/forms/mainPage.jsp");
+            response.sendRedirect("admin/");
 
         } else {
 
